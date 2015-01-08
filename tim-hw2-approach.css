@@ -1,0 +1,99 @@
+/*scale images to size of their container*/
+
+img {
+	max-width: 100%;
+}
+
+/*target all links and make them black*/
+a {
+	color: black;
+}
+
+
+/*Octocats*/
+
+/*remove the normalized features from list items*/
+.octodex {
+	margin: 0;
+	padding: 0;
+}
+
+/*line all the items up by floating them 1 direction (left)*/
+/*set width of each image*/
+/*remove the styling of the list items*/
+/*give some margin space between the image items*/
+.octocat {
+	float: left;
+	width: 450px;
+	list-style: none;
+	margin-right: 20px;
+
+}
+
+/*make the position relative so later on you can give elements absolute position within it*/
+/*set display block to wrap the anchor tag around the image element*/
+.octocat > a {
+	display: block;
+	position: relative;
+}
+
+/*give the image a border*/
+/*border radius set to round the corners*/
+.octocat img {
+	border: 1px solid lightgray;
+	display: block;
+	border-radius: 5px;
+}
+
+/*Image Footer Section*/
+
+/*set overflow auto because the elements inside this container will be floated*/
+.image-footer {
+	overflow: auto;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.image-number {
+	float: left;
+	color: lightgray;
+}
+
+.image-number::before {
+	content: "#";
+}
+
+.image-caption {
+	float: right;
+	text-align: right;
+}
+
+/*get rid of underline on link*/
+.image-caption a {
+	text-decoration: none;
+}
+
+
+
+/*Authors*/
+
+/*set line item to padding 0*/
+/*display inline-block because*/
+.authors {
+	display: inline-block;
+	padding: 0;
+}
+
+/*get rid of style of the list items*/
+/*set width of list item pictures to 25px*/
+.authors li {
+	list-style: none;
+}
+
+/*THIS IS KEY TO GET THE 3 IMAGES in 2nd container to line up*/
+.authors li a {
+	display: inline-block;
+	width: 25px;
+}
